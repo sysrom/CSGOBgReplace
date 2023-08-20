@@ -1,5 +1,6 @@
 # CSGOBgReplace
 替换CSGO主菜单背景
+有bug欢迎提交Issues
 
 # 食用方法
 准备一段webm格式的视频，打开游戏后打开CSGOBgReplace，点击检测就会自动填充目录<br>
