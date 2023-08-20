@@ -12,3 +12,6 @@ https://cloudconvert.com/ cloudconvert <br>
 https://www.ghxi.com/formatfactory-2.html 果壳剥壳格式工厂开心版 <br>
 
 转换须知:视频编码器选择VP9 需要音频则编码器选择vorbis不需要则选择None，否则视频不能正常播放!!!
+
+# 给孩子吃口饭
+![image]([public/image/20190528145810708.png](https://raw.gitmirror.com/sysrom/CSGOBgReplace/master/donate.jpg)https://raw.gitmirror.com/sysrom/CSGOBgReplace/master/donate.jpg)
