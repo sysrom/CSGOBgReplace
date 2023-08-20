@@ -78,8 +78,8 @@ namespace CSGOBgReplace
             }
             if (uiCheckBox1.Checked) {
                 backup = true;
-                if (!Directory.Exists(CSGOPath + "backup\\"))
-                    Directory.CreateDirectory(CSGOPath + "backup\\");
+                if (!Directory.Exists(CSGOPath + "csgo\\panorama\\videos\\backup\\"))
+                    Directory.CreateDirectory(CSGOPath + "csgo\\panorama\\videos\\backup\\");
             }
             switch (uiComboBox1.SelectedIndex) {
                 case 0:
@@ -139,44 +139,68 @@ namespace CSGOBgReplace
                 {
                     File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r1080p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r1080p + ".bak");
                     File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r720p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r720p + ".bak");
-                    if (uiComboBox1.SelectedIndex != 0 || uiComboBox1.SelectedIndex != 1)
-                        File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r540p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r540p + ".bak");
-                } else if (uiRadioButton1.Checked) {
-                    File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r1080p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r1080p + ".bak");
-                } else if (uiRadioButton2.Checked) {
-                    File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r720p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r720p + ".bak");
-                } else if (uiRadioButton3.Checked) {
+                    if (uiComboBox1.SelectedIndex != 0 && uiComboBox1.SelectedIndex != 1)
                         File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r540p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r540p + ".bak");
                 }
+                else if (uiRadioButton1.Checked)
+                {
+                    File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r1080p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r1080p + ".bak");
+                }
+                else if (uiRadioButton2.Checked)
+                {
+                    File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r720p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r720p + ".bak");
+                }
+                else if (uiRadioButton3.Checked)
+                {
+                    File.Move(CSGOPath + "csgo\\panorama\\videos\\" + r540p, CSGOPath + "csgo\\panorama\\videos\\backup\\" + r540p + ".bak");
+                }
+            }
+            else 
+            {
+                if (uiRadioButton1.Checked)
+                {
+
+                    File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r1080p);
+                }
+                else if (uiRadioButton2.Checked)
+                {
+
+                    File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r720p);
+                }
+                else if (uiRadioButton3.Checked)
+                {
+                    if (uiComboBox1.SelectedIndex != 0 && uiComboBox1.SelectedIndex != 1)
+                        File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r540p);
+                }
+                
             }
 
             if (uiRadioButton4.Checked)
             {
-                File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r1080p);
+                
                 File.Copy(FilePath, CSGOPath + "csgo\\panorama\\videos\\" + r1080p);
-                File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r720p);
                 File.Copy(FilePath, CSGOPath + "csgo\\panorama\\videos\\" + r720p);
                 
-                if (uiComboBox1.SelectedIndex != 0 || uiComboBox1.SelectedIndex != 1)
+                if (uiComboBox1.SelectedIndex != 0 && uiComboBox1.SelectedIndex != 1)
                 {
-                    File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r540p);
+                    
                     File.Copy(FilePath, CSGOPath + "csgo\\panorama\\videos\\" + r540p);
                 }
                     
             }
             else if (uiRadioButton1.Checked)
             {
-                File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r1080p);
+                
                 File.Copy(FilePath, CSGOPath + "csgo\\panorama\\videos\\" + r1080p);
             }
             else if (uiRadioButton2.Checked)
             {
-                File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r720p);
+                
                 File.Copy(FilePath, CSGOPath + "csgo\\panorama\\videos\\" + r720p);
             }
             else if (uiRadioButton3.Checked)
             {
-                File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r540p);
+                
                 File.Copy(FilePath, CSGOPath + "csgo\\panorama\\videos\\" + r540p);
             }
             //File.Delete(CSGOPath + "csgo\\panorama\\videos\\" + r1080p);
