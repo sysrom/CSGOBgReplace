@@ -18,4 +18,4 @@ https://www.ghxi.com/formatfactory-2.html 果壳剥壳格式工厂开心版 <br>
 
 
 # 给孩子吃口饭
-![image](https://raw.gitmirror.com/sysrom/CSGOBgReplace/master/donate.jpg)
+![image](https://raw.githubusercontent.com/sysrom/CSGOBgReplace/master/donate.jpg)
