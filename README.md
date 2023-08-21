@@ -8,7 +8,7 @@
 点击替换后游戏内更换背景即可生效 (注意:替换的时候确保你主菜单背景不是你要替换的，否则会因为文件使用中无法替换)<br>
 
 # 食用视频
-https://raw.gitmirror.com/sysrom/CSGOBgReplace/master/CSGOBgReplace/videos.mp4
+https://raw.githubusercontent.com/sysrom/CSGOBgReplace/master/CSGOBgReplace/videos.mp4
 
 # Mp4转webm
 https://cloudconvert.com/ cloudconvert <br>
@@ -18,4 +18,4 @@ https://www.ghxi.com/formatfactory-2.html 果壳剥壳格式工厂开心版 <br>
 
 
 # 给孩子吃口饭
-![image](https://raw.githubusercontent.com/sysrom/CSGOBgReplace/master/donate.jpg)
+![image](https://raw.gitmirror.com/sysrom/CSGOBgReplace/master/donate.jpg)
